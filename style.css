@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(58, 58, 153);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    min-height: 75vh;
+}
+
+.container{
+    background-color: rgb(34, 34, 102);
+    box-shadow: 0 0px 20px black;
+    border-radius: .5rem;
+    min-width: 40vh;
+}
+
+.header{
+    padding: .5rem;
+}
+
+.main{
+    padding: 0 1rem 1rem;
+}
+
+.pw{
+    background-color: rgb(58, 58, 153);
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.pw button{
+    background-color: white;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    padding: .25rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, 20%);
+    transition: opacity .2s ease, transform .2s ease;
+    opacity: 0;
+}
+
+.pw:hover button{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.form-setting{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: .75rem 0;
+}
+
+.generate{
+    background-color: purple;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0;
+    margin-top: .5rem;
+    width: 100%;
+}
